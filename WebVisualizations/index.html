@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="./Content/bootstrap.css"> -->
+    <link rel="stylesheet" href="./Content/bootstrap.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./Content/site.css">
+    <link rel = "icon" type = "image/png" href = "Images/logo.png">
 
-    <title>Index Page</title>
+    <title>Home.Latitude</title>
 </head>
 
 <body>
@@ -31,9 +32,11 @@
         crossorigin="anonymous"></script>
 
     <!-- Navigation Bar / Top Menu-->
-    <div class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar navbar-expand-md navbar-dark">
+        
         <a class="navbar-brand" href="index.html">
-            Latitude
+            <img src="Images/logo.png" width=36 height=36>      
+            <span class="h4 ">atitude</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +45,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
 
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Plots
@@ -69,24 +72,29 @@
             <div class="col-md-8 col-sm-12">
                 <div class="container body-content">
                     <div class="row">
-                        <div class="col-md-12 bg-light">
-                            <h1 class="display-5">Index Page: Latitude vs. X</h1>
+                        <div class="col-md-12">
+                            <h3 class="display-5">Summary: Latitude vs. Weather</h3>
                             <hr>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 bg-light">
+                        <div class="col-md-12">
 
                             <img src="Images/Latitude_vs_Temperature.png" class="img-fluid"
                                 alt="Latitude vs Temperature" style="float: left;">
 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing software like Aldus PageMaker including
-                            versions of Lorem Ipsum.
+                            <p class="text-justify">The purpose of this project was to analyze how weather changes as
+                                you get closer to the
+                                equator. To accomplish this analysis, we first pulled data from the <mark>OpenWeatherMap
+                                    API</mark> to
+                                assemble a dataset on over 500 cities.</p>
+                            <p class="text-justify">After assembling the dataset, we used <mark>Matplotlib</mark> to
+                                plot various aspects of the weather vs
+                                latitude. Factors we looked at includes: temperature, cloudiness, wind speed, and
+                                humidity.
+                                This site provides the source data and visualizations created as part of the analysis,
+                                as
+                                well explanations and descriptions of any trends and correlations witnessed.</p>
                         </div>
                     </div>
                 </div>
@@ -95,30 +103,33 @@
             <div class="col-md-4 col-sm-12">
                 <div class="container body-content">
                     <div class="row">
-                        <div class="col-md-12 bg-light">
-                            <h1 class="display-5" style="word-wrap:break-word">Visualizations</h1>
+                        <div class="col-md-12"><a href="Comparision.html" class="HeadAnchor">
+                            <h3 class="display-5" style="word-wrap:break-word">
+                                Visualizations
+                            </h3>
+                            </a>
                             <hr>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-3 w-25 bg-light">
-                            <a href="MaxTemp.html">
+                        <div class="col-lg-6 col-md-12 col-sm-3 w-50">
+                            <a href="MaxTemp.html" title="Max Temperature">
                                 <img src="Images/Latitude_vs_Temperature.png" class="img-fluid"
                                     alt="Latitude vs Temperature">
                             </a>
                         </div>
-                        <div class="col-md-6 col-sm-3 w-25 bg-light">
+                        <div class="col-lg-6 col-md-12 col-sm-3 w-50" title="Humidity">
                             <a href="Humidity.html">
                                 <img src="Images/Latitude_vs_Humidity.png" class="img-fluid" alt="Latitude vs Humidity">
                             </a>
                         </div>
-                        <div class="col-md-6 col-sm-3 w-25 bg-light">
+                        <div class="col-lg-6 col-md-12 col-sm-3 w-50" title="Cloudiness">
                             <a href="Cloudiness.html">
                                 <img src="Images/Latitude_vs_Cloudiness.png" class="img-fluid"
                                     alt="Latitude vs Cloudiness">
                             </a>
                         </div>
-                        <div class="col-md-6 col-sm-3 w-25 bg-light">
+                        <div class="col-lg-6 col-md-12 col-sm-3 w-50" title="WindSpeed">
                             <a href="WindSpeed.html">
                                 <img src="Images/Latitude_vs_Wind_Speed.png" class="img-fluid"
                                     alt="Latitude vs Wind Speed">

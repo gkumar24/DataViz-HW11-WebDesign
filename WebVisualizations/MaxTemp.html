@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./Content/bootstrap.css">
-    <link rel="stylesheet" href="./Content/site.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Max Temperature</title>
+    <link rel="stylesheet" href="./Content/site.css">
+    <link rel="icon" type="image/png" href="Images/logo.png">
+
+    <title>Max Temperature.Latitude</title>
 </head>
 
 <body>
@@ -30,8 +32,12 @@
         crossorigin="anonymous"></script>
 
     <!-- Navigation Bar / Top Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Navbar</a>
+    <div class="navbar navbar-expand-md navbar-dark">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="Images/logo.png" width=36 height=36>
+            <span class="h4 ">atitude</span>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,8 +45,8 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
 
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="MaxTemp.html" id="navbarDropdownMenuLink" role="button"
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Plots
                     </a>
@@ -59,11 +65,79 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </div>
     <br>
-    <div class="container body-content ">
-        <div class="jumbotron">
-            <h1 class="display-4">Max Temperature</h1>
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <div class="container body-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="display-5">Max. Temperature</h3>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <img src="Images/Latitude_vs_Temperature.png" class="img-fluid"
+                                alt="Latitude vs Temperature" style="float: left;">
+                            <span class="h6 font-weight-bold">Scope:</span>
+                            <p class="text-justify">What's the weather like as we approach the equator?</p>
+                            <span class="h6 font-weight-bold">Observation:</span>
+                            <p class="text-justify">Looking at the Temperature Vs. Latitude Graph, it can be observed
+                                that the temperature is very low at both the <mark>Arctic</mark>, <mark>Antarctic</mark>
+                                ends, showing farther from equator the temperature is low. Also as we move towards the
+                                equator, the temperature gets warmer, and further hotter as we reach sub tropics, and
+                                onto equator.
+                            </p>
+                            <p class="text-justify">Intrestingly, there are some low reading below 50&#8457;, and high
+                                above 100&#8457; recorded at Souther Tropic, this can be due to the position of the sun
+                                along the Latitude, since Earth is tilted along its axis. and also it can be due to the
+                                season, time of the day, and elevation of the city form sealevel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="container body-content">
+                    <div class="row">
+                        <div class="col-md-12"><a href="Comparision.html" class="HeadAnchor">
+                                <h3 class="display-5" style="word-wrap:break-word">
+                                    Visualizations
+                                </h3>
+                            </a>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-3 w-50 border-select">
+                            <a href="MaxTemp.html" title="Max Temperature">
+                                <img src="Images/Latitude_vs_Temperature.png" class="img-fluid"
+                                    alt="Latitude vs Temperature">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-3 w-50" title="Humidity">
+                            <a href="Humidity.html">
+                                <img src="Images/Latitude_vs_Humidity.png" class="img-fluid" alt="Latitude vs Humidity">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-3 w-50" title="Cloudiness">
+                            <a href="Cloudiness.html">
+                                <img src="Images/Latitude_vs_Cloudiness.png" class="img-fluid"
+                                    alt="Latitude vs Cloudiness">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-3 w-50" title="WindSpeed">
+                            <a href="WindSpeed.html">
+                                <img src="Images/Latitude_vs_Wind_Speed.png" class="img-fluid"
+                                    alt="Latitude vs Wind Speed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
