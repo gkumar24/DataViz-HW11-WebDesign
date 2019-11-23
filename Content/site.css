@@ -1,0 +1,36 @@
+.navbar-brand {
+    margin-left: 30px; 
+    font-size: 2rem;
+    padding-top: 0rem; 
+    padding-bottom: 0rem;
+}
+.navbar {
+    padding-top: 0rem; 
+    padding-bottom: 0rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia;
+    color: darkred;
+}
+
+.navbar{
+    background-color: darkred;
+}
+/**/
+.HeadAnchor:hover {
+    text-decoration: none;
+}
+
+/*Custom border, with color*/
+.border-select {
+    border:1px solid darkred;
+}
+
+/*give image some padding, so the border is visible, and not overlapped*/
+img {
+    padding:1px 1px 1px 1px;
+}
+
+
+
